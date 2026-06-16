@@ -81,6 +81,8 @@ pub struct Submission {
     pub status: SubmissionStatus,
     pub during_contest: bool,
     pub user_name: String,
+    pub start_date: DateTime<Utc>,
+    pub end_date: DateTime<Utc>,
 }
 
 #[derive(Debug, PartialEq, Eq, Serialize, Deserialize)]
